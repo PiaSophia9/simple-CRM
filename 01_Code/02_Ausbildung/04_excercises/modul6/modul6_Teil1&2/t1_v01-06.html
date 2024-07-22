@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Witze</title>
+    <style>
+      .funny-image {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Programmier-Witze</h1>
+
+    <button onclick="jokeOne()">Witz 1</button>
+    <button onclick="jokeTwo()">Witz 2</button>
+    <button onclick="jokeThree()">Witz 2</button>
+
+    <p id="joke">
+      Geht ein Keks um die Ecke und bricht sich einen <b>Krümel</b>.
+    </p>
+
+    <script>
+      function jokeOne() {
+        document.getElementById("joke").innerHTML = `
+        Was macht ein Pirat am Computer?
+        <br>
+        Er drückt die Entertaste.
+        <hr>
+        <img class="funny-image" src="wok.jpg">
+        `;
+      }
+      function jokeTwo() {
+        document.getElementById("joke").innerHTML = "Witz 2";
+      }
+      function jokeThree() {
+        document.getElementById("joke").innerHTML = "Witz 3";
+      }
+    </script>
+  </body>
+</html>

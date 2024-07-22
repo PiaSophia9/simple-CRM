@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function calc() {
+        let number = +document.getElementById("input").value;
+        let resultText = `The result of ${number}² is ${powerOf2(number)}`;
+        // Holt die Zahl aus dem Input-Feld.
+
+        alert(resultText);
+        // Wir als Alert angezeigt. Hier wird die Variable "number" in die Funktion "powerOf2" gegeben.
+      }
+
+      function powerOf2(x) {
+        // Diese Funktion bekommt von oben den Wert der Variablen number. Number wird hier zu x und wird ausgerechnet.
+        // number wird hier als x neu defieniert.
+        return x * x;
+        // Return sorgt auch dafür, dass in der Konsole "powerOf2(number)" durch das Ergebnis ersetzt wird.
+      }
+    </script>
+  </head>
+  <body>
+    <input id="input" type="text" />
+    <button onclick="calc()">Calc</button>
+  </body>
+</html>

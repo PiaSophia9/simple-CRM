@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"></script>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+<body onload="render()">
+    <h1>CRUD Übung Bücherliste</h1>
+    <input id="input" type="text" placeholder="Buchtitel..." >
+    <button onclick="add()">Buch Hinzufügen</button>
+    <p>Bücher Liste:</p>
+    <div id="content"></div>
+    <p>Gelesene Bücher:</p>
+    <div id="read"></div>
+
+</body>
+</html>

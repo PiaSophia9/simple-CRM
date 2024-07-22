@@ -1,0 +1,64 @@
+{
+    "assignedTo": [
+        {
+            "contactColor": "#FF5EB3",
+            "contactInitials": "SB",
+            "contactMail": "sophia.brouwers@gmx.de",
+            "contactName": "Sophia Brouwers",
+            "contactPhone": "016093891503"
+        }
+    ],
+    "category": "Technical Task",
+    "description": "Implement user authentication functionality to allow users to sign up, log in, and log out of the application.",
+    "dueDate": "2024-05-15",
+    "priority": "urgent",
+    "status": "in-progress",
+    "subtasks": [
+        {
+            "nameSubtask": "Design user registration form.",
+            "statusSubtask": "inProgress"
+        },
+        {
+            "nameSubtask": "Design log in form.",
+            "statusSubtask": "inProgress"
+        },
+        {
+            "nameSubtask": "Make User check privacy policy.",
+            "statusSubtask": "inProgress"
+        }
+    ],
+    "title": "Implement User Authentication"
+}
+
+
+{
+    "title": "Implement User Authentication",
+    "description": "Implement user authentication functionality to allow users to sign up, log in, and log out of the application.",
+    "dueDate": "2024-05-15",
+    "priority": "urgent",
+    "assignedTo": [
+        {
+            "contactName": "Sophia Brouwers",
+            "contactMail": "sophia.brouwers@gmx.de",
+            "contactPhone": "016093891503",
+            "contactInitials": "SB",
+            "contactColor": "#FF5EB3"
+        }
+    ],
+    "category": "Technical Task",
+    "subtasks": [
+        {
+            "nameSubtask": "Design user registration form.",
+            "statusSubtask": "inProgress"
+        },
+        {
+            "nameSubtask": "Design log in form.",
+            "statusSubtask": "inProgress"
+        },
+        {
+            "nameSubtask": "Make User check privacy policy.",
+            "statusSubtask": "inProgress"
+        }
+    ],
+    "status": "in-progress"
+}

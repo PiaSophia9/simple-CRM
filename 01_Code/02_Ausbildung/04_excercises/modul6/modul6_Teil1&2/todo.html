@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      let list = ["Apfel", "Banane", "Joghurt", "Brot"];
+
+      function showList() {
+        document.getElementById("mylist").innerHTML = ``;
+
+        for (let i = 0; i < list.length; i++) {
+          document.getElementById(
+            "mylist"
+          ).innerHTML += `<li>${list[i]} <a href="#" onclick="deleteToBuy(${i})">X</a> </li>`;
+        }
+      }
+
+      function addToBuy() {
+        let food = document.getElementById("myinput").value;
+        list.push(food);
+        showList();
+        document.getElementById("myinput").value = "";
+      }
+
+      function deleteToBuy(position) {
+        list.splice(position, 1);
+        showList();
+      }
+    </script>
+  </head>
+  <body onload="showList()">
+    <ul id="mylist"></ul>
+    <input type="text" name="" id="myinput" />
+    <button onclick="addToBuy()">Hinzufügen</button>
+  </body>
+</html>

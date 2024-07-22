@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SB Coding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+      }
+      .header-image {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.5);
+      }
+      .container {
+        font-family: "Lato", sans-serif;
+        position: absolute;
+        right: 32px;
+        left: 32px;
+        top: 32px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .menu-link {
+        color: white;
+        text-decoration: none;
+        margin-left: 16px;
+      }
+      .menu-link:hover {
+        color: rgb(243, 235, 167);
+      }
+
+      .headline {
+        position: absolute;
+        left: 50px;
+        top: 800px;
+        color: white;
+        font-size: 100px;
+        width: 500px;
+        text-shadow: 5px 10px 5px rgb(35, 35, 33);
+      }
+    </style>
+  </head>
+  <body>
+    <img class="header-image" src="/img/coding.jpg" />
+    <div class="container">
+      <img src="img/logo.png" />
+
+      <div>
+        <a class="menu-link" href="">Home</a>
+        <a class="menu-link" href="">Kontakt</a>
+        <a class="menu-link" href="">Impressum</a>
+        <a class="menu-link" href="">Über mich</a>
+        <a class="menu-link" href="">Meine Projekte</a>
+      </div>
+    </div>
+    <h1 class="headline">Mein Code - zu Ihren Diensten.</h1>
+  </body>
+</html>

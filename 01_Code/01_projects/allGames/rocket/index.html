@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raketenspiel</title>
+    <script>
+      let KEY_SPACE = false; //32
+      let KEY_UP = false; // 38
+      let KEY_DOWN = false; // 40
+      let canvas; // Auf das Canvas zugreifen.
+      let ctx; // ctx wird hier global definiert, damit wir von überall drauf zugreifen können. Das Canvas ist jetzt noch nicht befüllt. Das passiert erst weiter unten in der Funktion "startGame".
+      let backgroundImage = new Image();
+
+      let rocket = {
+        x: 10,
+        y: 200,
+        width: 100,
+        height: 50,
+        src: "./assets/img/rocket.png",
+      };
+      let ufo = {
+        x: 500,
+        y: 200,
+        width: 100,
+        height: 40,
+        src: "./assets/img/ufo.png",
+      };
+
+      // Wenn die Taste gedrückt wird, soll auf KEY_SPACE = true umgestellt werden.
+      document.onkeydown = function (e) {
+        // Leertaste wird gedrückt
+        if (e.keyCode == 32) {
+          KEY_SPACE = true;
+        }
+        // Taste nach oben wird gedrückt
+        if (e.keyCode == 38) {
+          KEY_UP = true;
+        }
+        // Taste nach unten wird gedrückt
+        if (e.keyCode == 40) {
+          KEY_DOWN = true;
+        }
+      };
+
+      // Wenn die Taste losgelassen wird, soll wieder auf KEY_SPACE = false eingestellt werden.
+      document.onkeyup = function (e) {
+        // Leertaste
+        if (e.keyCode == 32) {
+          KEY_SPACE = false;
+        }
+        // Nach oben
+        if (e.keyCode == 38) {
+          KEY_UP = false;
+        }
+        // Nach unten
+        if (e.keyCode == 40) {
+          KEY_DOWN = false;
+        }
+      };
+
+      function startGame() {
+        canvas = document.getElementById("canvas");
+        ctx = canvas.getContext("2d");
+        // Canvas wird befüllt.
+        loadImages();
+        // Bilder laden
+        setInterval(update, 1000 / 25);
+        // Die Funktion "update" soll nicht nur einmal ausgeführt werden, sondern in einem Interval immer wieder. Hier wird 25 Mal pro Sekunde und damit 25 Mal pro 1000 Millisekunden geupdatet. Die Funktion "update" ist weiter unten definiert.
+        draw();
+        // calculate
+      }
+
+      function update() {
+        if (KEY_UP) {
+          rocket.y -= 2; // Wenn die Pfeiltaste gedrückt wird, geht die Rakete auf der y-Achse 2 Pixel nach oben. Der Abstand zur y-Achse wird um 2 Pixel verringert.
+        }
+        if (KEY_DOWN) {
+          rocket.y += 2; // Wenn die Pfeiltaste gedrückt wird, geht die Rakete auf der y-Achse 2 Pixel nach unten. Der Abstand zur y-Achse wird um 2 Pixel erhöht.
+        }
+      }
+
+      function loadImages() {
+        backgroundImage.src = "./assets/img/background.jpg";
+        rocket.img = new Image();
+        rocket.img.src = rocket.src;
+
+        ufo.img = new Image();
+        ufo.img.src = ufo.src;
+      }
+
+      // Draw-Methode wird so häufig aufgerufen, wie möglich. Sie fragt ständig, ob gerade eine Taste gedrückt oder losgelassen wurde und spielt den passenden Frame aus.
+      function draw() {
+        ctx.drawImage(backgroundImage, 0, 0);
+        ctx.drawImage(
+          rocket.img,
+          rocket.x,
+          rocket.y,
+          rocket.width,
+          rocket.height
+        );
+
+        requestAnimationFrame(draw);
+      }
+    </script>
+    <style>
+      canvas {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+    </style>
+  </head>
+  <body onload="startGame()">
+    <canvas id="canvas" width="720" height="480"> </canvas>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+
+      .menu {
+        position: absolute;
+        right: 16px;
+        width: 50px;
+        top: 16px;
+        cursor: pointer;
+        transition: all 225 ease-in-out;
+      }
+
+      .exit_menu {
+        position: absolute;
+        right: 16px;
+        width: 50px;
+        top: 16px;
+        cursor: pointer;
+        transition: all 225 ease-in-out;
+      }
+
+      .overlay_menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 100vh;
+        background-color: white;
+        border-left: 1px solid black;
+        transform: translateX(501px);
+        transition: all 225 ease-in-out;
+      }
+
+      .show_overlay_menu {
+        transform: translateX(0);
+      }
+
+      .close_button {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+
+    <script>
+      function showMenu() {
+        document.getElementById("menu").classList.add("show_overlay_menu");
+      }
+
+      function closeMenu() {
+        document.getElementById("menu").classList.remove("show_overlay_menu");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Responsive Menu</h1>
+    <img onclick="showMenu()" class="menu" src="img/icons/burger_menu.svg" alt="" />
+
+    <div id="menu" class="overlay_menu">
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+
+      <img class="exit_menu" onclick="closeMenu()" src="img/icons/close_x.svg" alt="" />
+    </div>
+  </body>
+</html>

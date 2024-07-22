@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Only Time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ab5474;
+      }
+
+      .margin-top {
+        margin-top: 100px;
+      }
+
+      input {
+        background-color: transparent;
+        width: 550px;
+        display: flex;
+        flex: 1;
+        font-size: 200px;
+        color: white;
+        font-family: "Lato", sans-serif;
+        text-align: center;
+        border: none;
+        outline: none;
+      }
+
+      button {
+        padding: 0 60px;
+        height: 100px;
+        border: unset;
+        font-size: 50px;
+        font-family: "Lato", sans-serif;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body onclick="handleClick(event)" ondblclick="stopTimer()">
+    <div class="margin-top">
+      <input value="05  00" id="timer" type="text" />
+    </div>
+
+    <script>
+      let alarm = new Audio("ding.mp3");
+      let timerStarted = false;
+      let timerInterval;
+
+      function handleClick(event) {
+        let inputContainer = document.getElementById("timer");
+        if (event.target !== inputContainer) {
+          startTimer();
+        }
+      }
+
+      function startTimer() {
+        if (!timerStarted) {
+          let startTime = new Date().getTime();
+          let minutesInp = document.getElementById("timer").value.slice(0, 2);
+          let countdownTime = 1000 * 60 * minutesInp;
+          let endTime = startTime + countdownTime;
+
+          timerInterval = setInterval(function () {
+            let timeLeft = endTime - new Date().getTime();
+
+            if (timeLeft > 0) {
+              let minutes = timeLeft / (1000 * 60);
+              minutes = Math.floor(minutes);
+              minutes = ("0" + minutes).slice(-2);
+              let seconds = (timeLeft / 1000) % 60;
+              seconds = Math.round(seconds);
+              seconds = ("0" + seconds).slice(-2);
+              let text = minutes + "  " + seconds;
+              document.getElementById("timer").value = text;
+            } else {
+              alarm.play();
+              document.getElementById("timer").value = "00  00";
+            }
+          }, 1000);
+
+          timerStarted = true;
+        }
+      }
+
+      function stopTimer() {
+        clearInterval(timerInterval);
+        timerStarted = false;
+        document.getElementById("timer").value = "05  00";
+      }
+
+      function pauseTimer(event) {
+        let inputContainer = document.getElementById("timer");
+        if (event.target !== inputContainer) {
+          if ((timerStarted = true)) {
+            setTimeout(timerInterval);
+            timerStarted = false;
+            document.getElementById("timer").value =
+              document.getElementById("timer").value;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

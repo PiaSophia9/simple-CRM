@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sakura Ramen</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          class="logo"
+          src=".\assets\img\1_hero\PNG\sakura_logo.png"
+          alt="Rosa Blume als Logo."
+        />
+        <div class="nav-links">
+          <a id="menuLink" class="link" href="#menu">MENU</a>
+          <a id="locationLink" class="link" href="#locations">LOCATIONS</a>
+          <a id="aboutLink" class="link" href="#about">ABOUT</a>
+          <button>
+            <img class="phone" src=".\assets\img\1_hero\PNG\phone.png" alt="" />
+            <a href="tel:0176 54564534">0176 54564534</a>
+          </button>
+          <div class="flagg-container">
+            <img
+              onclick="translateToEnglish()"
+              class="flagg"
+              src="/assets/img/english.png"
+              alt=""
+            />
+            <img
+              onclick="translateToGerman()"
+              class="flagg"
+              src="/assets/img/german.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </nav>
+      <div>
+        <h1>SAKURA RAMEN</h1>
+        <h3 id="h3">THE BEST RAMEN IN TOWN</h3>
+      </div>
+    </header>
+    <section>
+      <h2 id="howToOrder">HOW TO ORDER</h2>
+      <div class="meal-container">
+        <div class="meal">
+          <img
+            class="order-icon"
+            src=".\assets\img\2_section_how_to_order\PNG\noodle.png"
+            alt="Schüssel mit Nudeln und Essstäbchen."
+          />
+          <h4 id="noodle" class="order-txt">Pick your<br />noodle</h4>
+        </div>
+        <div class="meal">
+          <img
+            class="order-icon"
+            src=".\assets\img\2_section_how_to_order\PNG\broth.png"
+            alt="Schüssel mit Suppe."
+          />
+
+          <h4 id="broth" class="order-txt">Pick your<br />broth</h4>
+        </div>
+        <div class="meal">
+          <img
+            class="order-icon"
+            src=".\assets\img\2_section_how_to_order\PNG\egg.png"
+            alt="Zwei Eier."
+          />
+          <h4 id="toppings" class="order-txt">Add your<br />toppings</h4>
+        </div>
+      </div>
+    </section>
+    <section class="menu-background" id="menu">
+      <div class="menu">
+        <div class="all-menu">
+          <h2 id="ourMenu" class="six-pix-margin">OUR MENU</h2>
+          <div class="menu-left">
+            <img
+              class="menu-img"
+              src=".\assets\img\3_section_our_menu\Png\R1.png"
+              alt="Soup with eggs and noodles."
+            />
+            <div class="menu-table">
+              <h4>Tonkotsu Ramen</h4>
+              <table>
+                <tr>
+                  <td id="chicken" class="padding-right">CHICKEN</td>
+                  <td>11,95€</td>
+                </tr>
+                <tr>
+                  <td id="beef" class="padding-right">BEEF</td>
+                  <td>12,95€</td>
+                </tr>
+                <tr>
+                  <td id="shrimp" class="padding-right">SHRIMP</td>
+                  <td>13,95€</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="menu-right">
+            <div class="menu-table">
+              <h4>Spicy Miso Ramen</h4>
+              <table>
+                <tr>
+                  <td>CHICKEN</td>
+                  <td class="padding-left">11,95€</td>
+                </tr>
+                <tr>
+                  <td>BEEF</td>
+                  <td class="padding-left">12,95€</td>
+                </tr>
+                <tr>
+                  <td>SHRIMP</td>
+                  <td class="padding-left">13,95€</td>
+                </tr>
+              </table>
+            </div>
+            <img
+              class="menu-img"
+              src=".\assets\img\3_section_our_menu\Png\R2.png"
+              alt="Soup with halb an egg, noodles and red and green things."
+            />
+          </div>
+          <div class="menu-left">
+            <img
+              class="menu-img"
+              src=".\assets\img\3_section_our_menu\Png\R3.png"
+              alt="Soup with meat and noodles."
+            />
+            <div class="menu-table">
+              <h4>Shio Ramen</h4>
+              <table>
+                <tr>
+                  <td class="padding-right">CHICKEN</td>
+                  <td>11,95€</td>
+                </tr>
+                <tr>
+                  <td class="padding-right">BEEF</td>
+                  <td>12,95€</td>
+                </tr>
+                <tr>
+                  <td class="padding-right">SHRIMP</td>
+                  <td>13,95€</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="find-us" id="locations">
+      <h2 class="h2-location">FIND US AT</h2>
+      <div class="address">
+        <img
+          class="map-marker"
+          src=".\assets\img\4_section_find_us_at\PNG\map_marker.png"
+          alt="Map Marker"
+        />
+        Kapuzinerstraße 31, München, 80337
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.2079675911045!2d11.558628377201295!3d48.125512651999955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf44d01affc5%3A0xe7a07e0710be63e8!2sKapuzinerstra%C3%9Fe%2031%2C%2080337%20M%C3%BCnchen!5e0!3m2!1sen!2sde!4v1706712336356!5m2!1sen!2sde"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <footer id="about">
+      <img
+        class="lable"
+        src=".\assets\img\5_section_footer\PNG\sakura_ramen_logo_and_text.png"
+        alt=""
+      />
+      <img
+        class="lable-mobile"
+        src="assets\img\1_hero\PNG\sakura_logo.png"
+        alt=""
+      />
+      <div>
+        <a href="https://www.tripadvisor.com/"
+          ><img
+            class="social-media"
+            src=".\assets\img\5_section_footer\PNG\tripadvisor_logo.png"
+            alt="tripadvisor icon"
+        /></a>
+        <a href="https://www.facebook.com"
+          ><img
+            class="social-media"
+            src=".\assets\img\5_section_footer\PNG\facebook_logo.png"
+            alt="facebook icon"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img
+            class="social-media"
+            src=".\assets\img\5_section_footer\PNG\instagrram_logo.png"
+            alt="instagram icon"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notizen</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.jpg" />
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="load()">
+    <header>
+      <img class="logo" src="img/favicon.jpg" alt="" />
+      <h1>Notizen</h1>
+    </header>
+    <hr />
+
+    <section class="mid_section">
+      <!-- navigation -->
+
+      <div class="sidebar">
+        <div id="navnotes" class="div_like_button go_yellow" onclick="openNotesInNav()">
+          <img class="nav_image" src="img/note.png" alt="" />
+          <span>Notizen</span>
+        </div>
+        <div id="navTrash" class="div_like_button" onclick="openTrashInNav()">
+          <img class="nav_image" src="img/trash.png" alt="" />
+          <span>Papierkorb</span>
+        </div>
+      </div>
+
+      <!-- form and notes -->
+
+      <div class="form_and_notes_container">
+        <form class="form_to_write_note" id="formToWriteNote">
+          <div class="inputs">
+            <input class="input_title" id="inputTitle" type="text" placeholder="Titel" required />
+            <textarea class="input_note" id="inputNote" placeholder="Notiz schreiben..." required></textarea>
+          </div>
+          <button type="button" onclick="addToArrays()">Hinzufügen</button>
+        </form>
+        <div class="notes_container" id="notesContainer"></div>
+      </div>
+    </section>
+
+    <!-- popup -->
+
+    <div id="popUp" class="popup d_none"></div>
+  </body>
+</html>

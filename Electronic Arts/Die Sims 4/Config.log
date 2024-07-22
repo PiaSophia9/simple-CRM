@@ -1,0 +1,291 @@
+=== Application info ===
+Name:            Sims4
+Version:         1.107.151.1020
+Build:           Release DX9 64-bit
+=== Rating info ===
+GPU: 5 GPU Memory: 4 CPU: 3 RAM: 4 CPU Speed: 1996 Threading: 3
+Adjusted CPU: 2794 RAM: 15182 Adjusted RAM: 14670 Cores: 6
+=== Machine info ===
+OS version:      Windows 11 10.0.22631
+OS prod type:    
+OS major ver:    10
+OS minor ver:    0
+OS SP major ver: 
+OS SP minor ver: 
+OS is 64Bit:     1
+CPU:             AuthenticAMD
+    Brand:       AMD Ryzen 5 7530U with Radeon Graphics         
+    Family:      15
+    Model:       0
+    Cores:       6
+    HT:          1
+    x64:         1
+Memory:          15182MB
+Free memory:     6956MB
+VA space:        134217728MB
+User:            piabr
+Computer:        SOPHIAS_THINKP
+=== Graphics device info ===
+Number:          0
+Name (driver):   AMD Radeon (TM) Graphics
+Name (database):  [Found: 0, Supported: 1]
+Vendor:          ATI
+Chipset:         Vendor: 1002, Device: 15e7, Board: 50d517aa, Chipset: 00c5
+Driver:          aticfx64.dll, Version: 31.0.21024.11002, GUID: D7B71EE2-56A7-11CF-E05E-F5226AC2D235
+Driver version:  11002
+Monitor:         \\.\DISPLAY1
+Texture memory:  1897MB
+Vertex program:  3.0
+Pixel program:   3.0
+Hardware TnL:    1
+Opt. features:   +sab +a8l8 +rgba16f +r32f +bc4 +bc5 -rawz +intz
+=== Options ===
+NumBoots 9
+TerrainSlopeScaling 1
+ForceDX9 0
+VerticalSync 0
+WindowedFullScreen 0
+FrameRateLimit 200
+DisableScreensaverInFullscreenMode 1
+AudioQuality 3
+AudioOutputMode 1
+MasterLevel 255
+VoiceLevel 255
+SoundFXLevel 255
+MusicLevel 255
+MenuMusicLevel 255
+UISoundSXLevel 255
+AmbientLevel 255
+FocusMute 1
+MoodChange 1
+VoiceMute 0
+SoundFXMute 0
+MusicMute 0
+UIMute 0
+AmbientMute 0
+MatchSpeedStereoMusic 1
+EdgeScrolling 1
+EdgeScrollingWarning 1
+EnableTelemetry 1
+InvertHorizontalRotation 0
+InvertVerticalRotation 0
+AdvancedCamera 0
+FPInvertHorizontalRotation 0
+FPInvertVerticalRotation 0
+FPDisableCameraBob 0
+CameraSpeed 100
+FPCameraSpeed 100
+CursorSpeed 100
+CursorAcceleration 100
+CursorScale 100
+ScreenshotPostUI 0
+VideoCaptureSize 1
+VideoCaptureQuality 2
+VideoCaptureSound 1
+VideoCaptureTime 0
+VideoCaptureHideUI 1
+AutonomyHousehold 3
+AutonomyDisabledForActiveSim 0
+SimsSetAgeSpeed 1
+SimsSetAgingEnabled 2
+TradSocialMenuEnabled 0
+MemoriesHelperEnabled 1
+AutoAgeUnplayed 1
+NPCReplacement 1
+TutorialEnabled 1
+MaxProtectedSims 0
+SeasonLength 0
+RainOptions 0
+SnowOptions 0
+TemperatureEffects 1
+LunarCycleLength 2
+LunarPhaseLock 8
+DisableLunarEffects 1
+FameStartSimsOptedOut 0
+Acne 1
+WhimSystem 1
+SelfDiscovery 1
+CareerLayOff 1
+ShowModListStartup 1
+ModsDisabled 0
+ScriptModsEnabled 0
+ShowOnlineNotifications 1
+AutoReconnect 1
+OnlineAccess 1
+DisableComments 0
+HideReportedContent 0
+AnimaticPack 1000
+SurveysEnabled 1
+MuteTutorialNarration 0
+EnableFTUETutorialStart 0
+GuidanceAutoEnabled 1
+GuidanceEnabled 1
+PackGuidanceEnabled 0
+GuidancePack 0
+CDSPollFrequency 3
+CDSAutomaticUpdates 1
+CDSAutomaticUpdatesUnderAge 0
+RestrictNPCWerewolves 0
+NPCRelationshipAutonomy 1
+PivotalMomentsEnabled 1
+MultiUnitEventsEnable 1
+MultiUnitHiddenByDefault 1
+LightingQuality 3
+GeneralReflections 3
+ObjectQuality 3
+VisualEffects 3
+PostProcessing 1
+UseUncompressedTextures 1
+TerrainQuality 2
+EdgeSmoothing 3
+SimQuality 3
+ViewDistance 3
+AdvancedRendering 1
+UseHiDpi 1
+UiScale 100
+UseOSDpi 1
+ResolutionWidth 1920
+ResolutionHeight 1200
+ResolutionRefresh 60
+SceneResolution 3
+VisualQuality 4
+FullScreen 1
+ThunderSnowStorms 1
+IcyConditions 1
+DynamicKeyboardLightingEnabled 1
+RazerOptionEnabled 0
+NPCCivicVoting 1
+EcoFootprintGameplay 1
+BuildEcoEffects 1
+LifestylesEffects 1
+DustSystem 1
+CreatureAging 1
+StoryProgressionEffects 1
+ColorAssistType 0
+ColorAssistContrast 2
+ColorAssistBrightness 2
+=== Default Options ===
+NumBoots 4294967295
+TerrainSlopeScaling 1
+ForceDX9 0
+VerticalSync 0
+WindowedFullScreen 0
+FrameRateLimit 200
+DisableScreensaverInFullscreenMode 1
+AudioQuality 3
+AudioOutputMode 1
+MasterLevel 255
+VoiceLevel 255
+SoundFXLevel 255
+MusicLevel 255
+MenuMusicLevel 255
+UISoundSXLevel 255
+AmbientLevel 255
+FocusMute 1
+MoodChange 1
+VoiceMute 0
+SoundFXMute 0
+MusicMute 0
+UIMute 0
+AmbientMute 0
+MatchSpeedStereoMusic 1
+EdgeScrolling 1
+EdgeScrollingWarning 1
+EnableTelemetry 1
+InvertHorizontalRotation 0
+InvertVerticalRotation 0
+AdvancedCamera 0
+FPInvertHorizontalRotation 0
+FPInvertVerticalRotation 0
+FPDisableCameraBob 0
+CameraSpeed 100
+FPCameraSpeed 100
+CursorSpeed 100
+CursorAcceleration 100
+CursorScale 100
+ScreenshotPostUI 0
+VideoCaptureSize 1
+VideoCaptureQuality 2
+VideoCaptureSound 1
+VideoCaptureTime 0
+VideoCaptureHideUI 1
+AutonomyHousehold 3
+AutonomyDisabledForActiveSim 0
+SimsSetAgeSpeed 1
+SimsSetAgingEnabled 2
+TradSocialMenuEnabled 0
+MemoriesHelperEnabled 1
+AutoAgeUnplayed 1
+NPCReplacement 1
+TutorialEnabled 1
+MaxProtectedSims 0
+SeasonLength 0
+RainOptions 0
+SnowOptions 0
+TemperatureEffects 1
+LunarCycleLength 2
+LunarPhaseLock 8
+DisableLunarEffects 1
+FameStartSimsOptedOut 0
+Acne 1
+WhimSystem 1
+SelfDiscovery 1
+CareerLayOff 1
+ShowModListStartup 1
+ModsDisabled 0
+ScriptModsEnabled 0
+ShowOnlineNotifications 1
+AutoReconnect 1
+OnlineAccess 1
+DisableComments 0
+HideReportedContent 0
+AnimaticPack 1000
+SurveysEnabled 1
+MuteTutorialNarration 0
+EnableFTUETutorialStart 1
+GuidanceAutoEnabled 1
+GuidanceEnabled 1
+PackGuidanceEnabled 0
+GuidancePack 0
+CDSPollFrequency 3
+CDSAutomaticUpdates 1
+CDSAutomaticUpdatesUnderAge 0
+RestrictNPCWerewolves 0
+NPCRelationshipAutonomy 1
+PivotalMomentsEnabled 1
+MultiUnitEventsEnable 1
+MultiUnitHiddenByDefault 1
+LightingQuality 4
+GeneralReflections 3
+ObjectQuality 3
+VisualEffects 3
+PostProcessing 1
+UseUncompressedTextures 1
+TerrainQuality 2
+EdgeSmoothing 3
+SimQuality 4
+ViewDistance 3
+AdvancedRendering 1
+UseHiDpi 1
+UiScale 100
+UseOSDpi 1
+ResolutionWidth 1920
+ResolutionHeight 1200
+ResolutionRefresh 4294967295
+SceneResolution 3
+VisualQuality 5
+FullScreen 0
+ThunderSnowStorms 1
+IcyConditions 1
+DynamicKeyboardLightingEnabled 1
+RazerOptionEnabled 0
+NPCCivicVoting 1
+EcoFootprintGameplay 1
+BuildEcoEffects 1
+LifestylesEffects 1
+DustSystem 1
+CreatureAging 1
+StoryProgressionEffects 1
+ColorAssistType 0
+ColorAssistContrast 2
+ColorAssistBrightness 2

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <script src="script.js"></script>
+    <style>
+      .background-dark {
+        background-color: #ab5474;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+      }
+
+      .margin-top {
+        margin-top: 100px;
+      }
+
+      .timer {
+        font-size: 60px;
+        color: white;
+        font-family: "Lato", sans-serif;
+      }
+
+      button {
+        padding: 0 32px;
+        height: 50px;
+        border: unset;
+        font-size: 24px;
+        font-family: "Lato", sans-serif;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body class="background-dark">
+    <div>
+      <img src="img/menu_dark.png" alt="" />
+    </div>
+
+    <div class="center margin-top">
+      <img src="img/timer.png" alt="" />
+    </div>
+
+    <div class="center margin-top timer" id="timer">05:00</div>
+
+    <div class="center margin-top">
+      <button onclick="startTimer()">START</button>
+    </div>
+  </body>
+</html>

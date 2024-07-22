@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lasagne</title>
+    <script src="/script/script.js"></script>
+    <link rel="stylesheet" href="/style/recipe.css" />
+    <link rel="stylesheet" href="/style/main.css" />
+    <link rel="stylesheet" href="/style/header.css" />
+    <link rel="stylesheet" href="/style/fonts.css" />
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="icon" type="image/x-icon" href="/img/logo_small.png" />
+  </head>
+
+  <body onload="includeHTML()">
+    <div w3-include-html="/templates/header.html"></div>
+
+    <div class="page">
+      <section class="section-img">
+        <h1>Lasagne</h1>
+        <div class="container-img-meal">
+          <img class="img-meal" src="/img/recipe/lasagne.jpg" alt="Lasagne" />
+        </div>
+        <div class="facts">
+          <div class="fact">
+            <img class="fact-img" src="/img/icons/clock-regular.svg" alt="" />
+            <span>20 Min</span>
+          </div>
+          <div class="fact">
+            <img class="fact-img" src="/img/icons/brain-solid.svg" alt="" />
+            <span>simpel</span>
+          </div>
+          <div class="fact">
+            <img
+              class="fact-img"
+              src="/img/icons/calendar-alt-regular.svg"
+              alt=""
+            />
+            <span>13.02.2024</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-ingredients">
+        <hr />
+        <div class="input-container">
+          <label>
+            Zutaten für
+            <input type="number" min="0" name="amount" placeholder="4" />
+          </label>
+          <button type="submit">Portionen</button>
+        </div>
+
+        <!-- Zutatenliste -->
+        <table class="ingredient-amount">
+          <tr>
+            <td class="amount">400g</td>
+            <td class="ingredient">Hackfleisch</td>
+          </tr>
+          <tr>
+            <td class="amount">1 1/2</td>
+            <td class="ingredient">Zwiebel(n)</td>
+          </tr>
+          <tr>
+            <td class="amount">1 EL</td>
+            <td class="ingredient">Tomatenmark</td>
+          </tr>
+          <tr>
+            <td class="amount">300ml</td>
+            <td class="ingredient">Tomatenpüree</td>
+          </tr>
+          <tr>
+            <td class="amount"></td>
+            <td class="ingredient">Oregano</td>
+          </tr>
+          <tr>
+            <td class="amount"></td>
+            <td class="ingredient">Salz und Pfeffer</td>
+          </tr>
+          <tr>
+            <td class="amount">1</td>
+            <td class="ingredient">Knoblauchzehe(n)</td>
+          </tr>
+          <tr>
+            <td class="amount">50g</td>
+            <td class="ingredient">Margarine</td>
+          </tr>
+          <tr>
+            <td class="amount">50g</td>
+            <td class="ingredient">Mehl</td>
+          </tr>
+          <tr>
+            <td class="amount">0,3l</td>
+            <td class="ingredient">Gemüsebrühe</td>
+          </tr>
+          <tr>
+            <td class="amount">0,3l</td>
+            <td class="ingredient">Milch</td>
+          </tr>
+          <tr>
+            <td class="amount">1 Pck.</td>
+            <td class="ingredient">Pizzakäse</td>
+          </tr>
+          <tr>
+            <td class="amount">1 Pck.</td>
+            <td class="ingredient">Lasagneplatte(n)</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="section-preparation">
+        <h2>Zubereitung</h2>
+        <div class="facts">
+          <div class="fact">
+            <img class="fact-img" src="/img/icons/clock-regular.svg" alt="" />
+            <span>Ca. 25 Min</span>
+          </div>
+          <div class="fact">
+            <img class="fact-img" src="/img/icons/clock-regular.svg" alt="" />
+            <span>Gesamtzeit ca. 1 Stunde 35 Minuten</span>
+          </div>
+        </div>
+        <p>
+            Hackfleischsoße:
+            Hackfleisch mit 2 El Öl anbraten, 2 Zwiebeln schälen, in Würfel schneiden und dazugeben. 1 EL Tomatenmark unterrühren und mit 500 ml pürierten Tomaten und ein wenig Wasser ablöschen. Eine Knoblauchzehe klein schneiden und dazugeben. Danach würzen mit Salz, Pfeffer, Paprika und Oregano und 10 Minuten kochen lassen.
+        </p>
+        <p>
+            Béchamelsoße:
+            80 g Margarine im Topf erhitzen, 80 g Mehl dazugeben und anschwitzen lassen. 1/2 Liter Gemüsebrühe langsam hinzugeben und immer gut umrühren. Dann die Milch hinzugeben und aufkochen lassen, eine Hand voll von dem Käse in die Béchamelsoße geben und gut umrühren. Mit Salz, Pfeffer und Muskat würzen.
+        </p>
+        <p>
+            Erst ein wenig von der Hackfleischsoße in eine feuerfeste Form geben, darauf Lasagneblätter, dann wieder Hackfleischsoße, dann die Béchamelsoße auf die Hackfleischsoße geben, darauf wieder Lasagneblätter und das so weiter machen. Als letztes muss die Béchamelsoße darauf sein.
+            Zum Schluss den restlichen Pizzakäse darauf streuen.
+        </p>
+        <p>30 - 40 Minuten bei 180° Umluft backen.</p>
+      </section>
+
+      <section class="section-who-made">
+        <h3>Rezept erstellt von</h3>
+        <div class="owner-div">
+          <img class="profile-img" src="/img/profile/dominik.png" alt="" />
+          <label class="owner-label" for="">Dominik</label>
+        </div>
+      </section>
+    </div>
+    <div w3-include-html="/templates/footer.html"></div>
+  </body>
+</html>

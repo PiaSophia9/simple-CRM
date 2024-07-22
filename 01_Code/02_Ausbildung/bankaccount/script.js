@@ -1,0 +1,3 @@
+init() {
+    new Bankkkonto
+}

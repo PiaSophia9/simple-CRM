@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FiFo-Rechner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>FiFo-Rechner</h1>
+    <hr />
+    <div>
+      <form>
+        <input type="file" inpFile accept=".csv" />
+        <br />
+        <button onclick="">Upload File</button>
+      </form>
+    </div>
+    <div>
+      Welchen ETF möchten Sie verkaufen? Bitte geben Sie die WKN an:<br />Bsp.:
+      LYX0YD
+    </div>
+    <div class="input-container">
+      <input value="" id="wknField" type="text" />
+    </div>
+    <div>
+      Wie ist der aktuelle Kurs? Bitte geben Sie auf 3 Dezimalzahlen genau
+      an:<br />Bsp.: 13,865
+    </div>
+    <div class="input-container">
+      <input value="" id="vkField" type="text" />
+    </div>
+    <div>
+      Wie viel Ihres Freistellungsbetrag ist noch ungenutzt?<br />Bsp.: 1000
+    </div>
+    <div class="input-container">
+      <input value="" id="freiField" type="text" />
+    </div>
+    <div>
+      <button onclick="">Zu verkaufende ETFs errechnen.</button>
+    </div>
+    <div>Sie müssen () ETFs verkaufen.</div>
+    <div>Sie haben () Euro an Kapitalertragssteuer gespart.</div>
+    <script src="script.js"></script>
+  </body>
+</html>

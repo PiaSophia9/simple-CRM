@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mein Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .mybody {
+        margin: 0px;
+      }
+      .aft-image {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+      .navbar {
+        position: absolute;
+        margin-top: 62px;
+        margin-left: 60px;
+        font-family: "Lato", sans-serif;
+        font-size: 15px;
+        background-color: rgba(200, 146, 10, 0.4);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .navbar-link {
+        text-decoration: none;
+        color: white;
+        margin: 5px;
+        filter: drop-shadow(2px 6px 8px black);
+      }
+      .navbar-link:hover {
+        text-decoration: underline;
+      }
+      h1 {
+        filter: drop-shadow(2px 6px 8px black);
+        font-family: "Lato", sans-serif;
+      }
+      .headlines {
+        font-family: "Lato", sans-serif;
+      }
+      a {
+        color: rgb(200, 146, 10);
+        text-decoration: none;
+      }
+      a:hover {
+        color: rgb(200, 146, 10);
+        text-decoration: underline;
+      }
+      .main-container {
+        position: absolute;
+        height: 150px;
+        top: 130px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(200, 146, 10, 0.4);
+        color: white;
+      }
+      button {
+        color: white;
+        background-color: rgb(110, 36, 23);
+
+        padding: 5px;
+        filter: drop-shadow(2px 6px 8px black);
+        font-family: "Lato", sans-serif;
+      }
+      button:hover {
+        background-color: rgb(116, 61, 51);
+        cursor: pointer;
+      }
+      .container {
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-bottom: 64px;
+      }
+      .googlemaps {
+        height: 350px;
+        width: 100%;
+      }
+      .footer {
+        background-color: rgba(200, 146, 10, 0.4);
+        color: black;
+        padding: 100px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      .footer-link {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+      }
+      .footer-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="911b2923-01dd-4e63-a0e9-416a84ee3e4a"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body class="mybody">
+    <div class="navbar">
+      <a class="navbar-link" href="#contact">KONTAKT</a>
+      <a class="navbar-link" href="#openingHours">ÖFFNUNGSZEITEN</a>
+      <a class="navbar-link" href="#route">ANFAHRT</a>
+      <a class="navbar-link" href="#menu">SPEISEN</a>
+    </div>
+    <img class="aft-image" src="./img/restaurant.jpg" />
+
+    <div class="main-container">
+      <h1 class="headline">Herzlich Willkommen!</h1>
+
+      <button>Jetzt bestellen!</button>
+    </div>
+
+    <div class="container" id="openingHours">
+      <h2 class="headlines">Unsere Öffnungszeiten</h2>
+      <table>
+        <tr>
+          <td>Mo - Fr:</td>
+          <td>12:00 - 23:00 Uhr</td>
+        </tr>
+        <tr>
+          <td>Sa</td>
+          <td>11:00 - 24:00 Uhr</td>
+        </tr>
+        <tr>
+          <td>So</td>
+          <td>11:00 - 24:00 Uhr</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="container" id="route">
+      <h2 class="headlines">Anfahrt</h2>
+      Unsere Adresse lautet:
+      <br />
+      Süsterfeldstr. 24
+      <br />
+      52072 Aachen
+      <br />
+      <iframe
+        class="googlemaps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2522.675722161143!2d6.0721342999999885!3d50.78158460000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0999d4b575d15%3A0x42e4a6f0a5865cbb!2sS%C3%BCsterfeldstra%C3%9Fe%2024%2C%2052072%20Aachen!5e0!3m2!1sen!2sde!4v1706531836791!5m2!1sen!2sde"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <div class="container" id="menu">
+      <h2 class="headlines">Speisekarte</h2>
+      <table>
+        <tr>
+          <td>1</td>
+          <td>Pizza</td>
+          <td>12,50€</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Pasta</td>
+          <td>12,50€</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Lasagne</td>
+          <td>14,50€</td>
+        </tr>
+      </table>
+      <br />
+      Jetzt die Speiseskarte
+      <a href="./downloads/speisekarte.pdf" target="_blank">herunterladen</a>.
+    </div>
+
+    <div class="container" id="contact">
+      <h2 class="headlines">Kontakt</h2>
+      Telefon: <a href="tel:0241123546">0241123546</a>
+      <br />
+      E-Mail: <a href="mailto:pia.brouwers@gmail.com">pia.brouwers@gmail.com</a>
+      <br />
+      Wir freuen uns auf Ihre Kontaktaufnahme!
+      <br />
+      <br />
+    </div>
+
+    <div class="footer">
+      <div>(c) Copyright 2024 Pia Brouwers</div>
+      <div>
+        <a href="impressum.html" class="footer-link">Impressum </a>|
+        <a href="datenschutz.html" class="footer-link">Datenschutz</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Witze</title>
+    <style>
+      .funny-image {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Greet</h1>
+
+    <input id="nameinput" type="text" />
+    <button onclick="greetFromTextField()">Grüßen</button>
+    <!-- Wenn ich den Button clicke wird die Funktion "greetFromTextField()" aufgerufen, die unten definiert ist. -->
+
+    <p id="greeting"></p>
+    <!-- Dieser Tag hat erstmal keinen Inhalt. Erst, wenn ich den Button klicke und die Funktion "greet" ausgeführt wird, füllt er sich.  -->
+
+    <script>
+      function greetFromTextField() {
+        let name = document.getElementById("nameinput").value;
+        // Damit holen wir uns, was ins input-Feld eingegeben wurde.
+        greet(name); //Die Funktion unten wird aufgerufen.
+      }
+
+      function greet(x) {
+        document.getElementById(
+          "greeting"
+        ).innerHTML = `Hallo ${x}, wie geht es dir?`;
+        // Dem x wird der Wert des Input-Feldes zugewiesen.
+      }
+    </script>
+  </body>
+</html>

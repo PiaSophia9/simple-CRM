@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(111, 43, 77);
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+div {
+  min-height: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+input {
+  height: 30px;
+  background-color: rgb(143, 70, 106);
+  border: 1px solid;
+  border-color: white;
+  text-align: center;
+  border-radius: 0px;
+  color: white;
+  flex: 1;
+  font-size: 18px;
+}
+
+button {
+  background-color: rgb(85, 16, 50);
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  margin-top: 20px;
+  padding: 0 32px;
+  height: 30px;
+  border: unset;
+  font-size: 18px;
+  border-radius: 0px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}

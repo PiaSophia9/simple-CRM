@@ -1,0 +1,62 @@
+Geometry [Custom RenderTarget]:  1280*720 
+ -- ElapsedTime: 97.371920ms (0.097372 seconds) 
+ -- Frames: 30 
+ -- Average Results: 3.245731ms  
+ -- Min: 1.333320ms  
+ -- Max: 4.636110ms  
+ -- 50%: 3.425960ms  
+ -- 70%: 3.657920ms  
+ -- 90%: 4.131520ms
+
+Memory Bandwidth [Custom RenderTarget]:  1280*720 
+ -- ElapsedTime: 195.966560ms (0.195967 seconds) 
+ -- Frames: 30 
+ -- Average Results: 6.532219ms  
+ -- Min: 5.904480ms  
+ -- Max: 8.928160ms  
+ -- 50%: 6.015200ms  
+ -- 70%: 6.487800ms  
+ -- 90%: 7.776600ms
+
+Shader Processing [Custom RenderTarget]:  1280*720 
+ -- ElapsedTime: 582.744440ms (0.582744 seconds) 
+ -- Frames: 30 
+ -- Average Results: 19.424815ms  
+ -- Min: 18.051280ms  
+ -- Max: 21.047400ms  
+ -- 50%: 18.188640ms  
+ -- 70%: 20.842680ms  
+ -- 90%: 21.022680ms
+
+Geometry [Player RenderTarget] :  1920*1200 
+ -- ElapsedTime: 119.044840ms (0.119045 seconds) 
+ -- Frames: 30 
+ -- Average Results: 3.968161ms  
+ -- Min: 2.012400ms  
+ -- Max: 6.251280ms  
+ -- 50%: 3.713360ms  
+ -- 70%: 4.280120ms  
+ -- 90%: 5.244600ms
+
+Memory Bandwidth [Player RenderTarget] :  1920*1200 
+ -- ElapsedTime: 501.382520ms (0.501383 seconds) 
+ -- Frames: 30 
+ -- Average Results: 16.712751ms  
+ -- Min: 15.156720ms  
+ -- Max: 18.582280ms  
+ -- 50%: 15.663280ms  
+ -- 70%: 18.110080ms  
+ -- 90%: 18.195120ms
+
+Shader Processing [Player RenderTarget] :  1920*1200 
+ -- ElapsedTime: 1026.101080ms (1.026101 seconds) 
+ -- Frames: 23 
+ -- Average Results: 44.613090ms  
+ -- Min: 30.169120ms  
+ -- Max: 51.781320ms  
+ -- 50%: 45.918520ms  
+ -- 70%: 46.116040ms  
+ -- 90%: 48.603640ms
+
+Total Elapsed Time:3180ms 
+

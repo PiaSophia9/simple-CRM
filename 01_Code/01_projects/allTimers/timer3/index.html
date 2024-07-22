@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: #fffaf0;
+      }
+
+      .swiper {
+        height: 30vw;
+        background-color: transparent;
+      }
+
+      .swiper-wrapper {
+        background-color: aquamarine;
+      }
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Lato", sans-serif;
+        font-size: 20vw;
+        color: black;
+        background-color: transparent;
+      }
+    </style>
+  </head>
+
+  <body onclick="handleClick(event)" ondblclick="stopTimer()">
+    <!--1. Slider-->
+    <!--Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper" id="swiperWraper1">
+        <!-- Slides -->
+        <div class="swiper-slide">01</div>
+        <div class="swiper-slide">01</div>
+        <div class="swiper-slide">02</div>
+        <div class="swiper-slide">03</div>
+        <div class="swiper-slide">04</div>
+        <div class="swiper-slide">05</div>
+        <div class="swiper-slide">06</div>
+        <div class="swiper-slide">07</div>
+        <div class="swiper-slide">08</div>
+        <div class="swiper-slide">09</div>
+        <div class="swiper-slide">10</div>
+        <div class="swiper-slide">11</div>
+        <div class="swiper-slide">12</div>
+        <div class="swiper-slide">13</div>
+        <div class="swiper-slide">14</div>
+        <div class="swiper-slide">15</div>
+        <div class="swiper-slide">16</div>
+        <div class="swiper-slide">17</div>
+        <div class="swiper-slide">18</div>
+        <div class="swiper-slide">19</div>
+        <div class="swiper-slide">20</div>
+        <div class="swiper-slide">21</div>
+        <div class="swiper-slide">22</div>
+        <div class="swiper-slide">23</div>
+      </div>
+    </div>
+    <!--2. Slider-->
+    <!--Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper" id="swiperWraper2">
+        <!-- Slides -->
+        <div class="swiper-slide">02</div>
+        <div class="swiper-slide">01</div>
+        <div class="swiper-slide">02</div>
+        <div class="swiper-slide">03</div>
+        <div class="swiper-slide">04</div>
+        <div class="swiper-slide">05</div>
+        <div class="swiper-slide">06</div>
+        <div class="swiper-slide">07</div>
+        <div class="swiper-slide">08</div>
+        <div class="swiper-slide">09</div>
+        <div class="swiper-slide">10</div>
+        <div class="swiper-slide">11</div>
+        <div class="swiper-slide">12</div>
+        <div class="swiper-slide">13</div>
+        <div class="swiper-slide">14</div>
+        <div class="swiper-slide">15</div>
+        <div class="swiper-slide">16</div>
+        <div class="swiper-slide">17</div>
+        <div class="swiper-slide">18</div>
+        <div class="swiper-slide">19</div>
+        <div class="swiper-slide">20</div>
+        <div class="swiper-slide">21</div>
+        <div class="swiper-slide">22</div>
+        <div class="swiper-slide">23</div>
+        <div class="swiper-slide">24</div>
+        <div class="swiper-slide">25</div>
+        <div class="swiper-slide">26</div>
+        <div class="swiper-slide">27</div>
+        <div class="swiper-slide">28</div>
+        <div class="swiper-slide">29</div>
+        <div class="swiper-slide">30</div>
+        <div class="swiper-slide">31</div>
+        <div class="swiper-slide">32</div>
+        <div class="swiper-slide">33</div>
+        <div class="swiper-slide">34</div>
+        <div class="swiper-slide">35</div>
+        <div class="swiper-slide">36</div>
+        <div class="swiper-slide">37</div>
+        <div class="swiper-slide">38</div>
+        <div class="swiper-slide">39</div>
+        <div class="swiper-slide">40</div>
+        <div class="swiper-slide">41</div>
+        <div class="swiper-slide">42</div>
+        <div class="swiper-slide">43</div>
+        <div class="swiper-slide">44</div>
+        <div class="swiper-slide">45</div>
+        <div class="swiper-slide">46</div>
+        <div class="swiper-slide">47</div>
+        <div class="swiper-slide">48</div>
+        <div class="swiper-slide">49</div>
+        <div class="swiper-slide">50</div>
+        <div class="swiper-slide">51</div>
+        <div class="swiper-slide">52</div>
+        <div class="swiper-slide">53</div>
+        <div class="swiper-slide">54</div>
+        <div class="swiper-slide">55</div>
+        <div class="swiper-slide">56</div>
+        <div class="swiper-slide">57</div>
+        <div class="swiper-slide">58</div>
+        <div class="swiper-slide">59</div>
+      </div>
+    </div>
+    <!--3. Slider-->
+    <!--Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper" id="swiperWraper3">
+        <!-- Slides -->
+        <div class="swiper-slide">03</div>
+        <div class="swiper-slide">01</div>
+        <div class="swiper-slide">02</div>
+        <div class="swiper-slide">03</div>
+        <div class="swiper-slide">04</div>
+        <div class="swiper-slide">05</div>
+        <div class="swiper-slide">06</div>
+        <div class="swiper-slide">07</div>
+        <div class="swiper-slide">08</div>
+        <div class="swiper-slide">09</div>
+        <div class="swiper-slide">10</div>
+        <div class="swiper-slide">11</div>
+        <div class="swiper-slide">12</div>
+        <div class="swiper-slide">13</div>
+        <div class="swiper-slide">14</div>
+        <div class="swiper-slide">15</div>
+        <div class="swiper-slide">16</div>
+        <div class="swiper-slide">17</div>
+        <div class="swiper-slide">18</div>
+        <div class="swiper-slide">19</div>
+        <div class="swiper-slide">20</div>
+        <div class="swiper-slide">21</div>
+        <div class="swiper-slide">22</div>
+        <div class="swiper-slide">23</div>
+        <div class="swiper-slide">24</div>
+        <div class="swiper-slide">25</div>
+        <div class="swiper-slide">26</div>
+        <div class="swiper-slide">27</div>
+        <div class="swiper-slide">28</div>
+        <div class="swiper-slide">29</div>
+        <div class="swiper-slide">30</div>
+        <div class="swiper-slide">31</div>
+        <div class="swiper-slide">32</div>
+        <div class="swiper-slide">33</div>
+        <div class="swiper-slide">34</div>
+        <div class="swiper-slide">35</div>
+        <div class="swiper-slide">36</div>
+        <div class="swiper-slide">37</div>
+        <div class="swiper-slide">38</div>
+        <div class="swiper-slide">39</div>
+        <div class="swiper-slide">40</div>
+        <div class="swiper-slide">41</div>
+        <div class="swiper-slide">42</div>
+        <div class="swiper-slide">43</div>
+        <div class="swiper-slide">44</div>
+        <div class="swiper-slide">45</div>
+        <div class="swiper-slide">46</div>
+        <div class="swiper-slide">47</div>
+        <div class="swiper-slide">48</div>
+        <div class="swiper-slide">49</div>
+        <div class="swiper-slide">50</div>
+        <div class="swiper-slide">51</div>
+        <div class="swiper-slide">52</div>
+        <div class="swiper-slide">53</div>
+        <div class="swiper-slide">54</div>
+        <div class="swiper-slide">55</div>
+        <div class="swiper-slide">56</div>
+        <div class="swiper-slide">57</div>
+        <div class="swiper-slide">58</div>
+        <div class="swiper-slide">59</div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "vertical",
+        loop: true,
+        freeMode: {
+          enabled: true,
+          sticky: true,
+        },
+      });
+      let alarm = new Audio("ding.mp3");
+      let timerStarted = false;
+      let timerInterval;
+      let minutesInp;
+      let minutesContainer = document.getElementById("swiperWraper2");
+
+      function handleClick(event) {
+        let minutesContainer = document.getElementById("swiperWraper2");
+        if (event.target !== minutesContainer) {
+          startTimer();
+        }
+      }
+
+      // Funktion, um die aktuell sichtbare Zahl zu speichern
+      function speichereAktuelleZahl() {
+        // Aktive Slide-Nummer erhalten (beginnt bei 0)
+        const aktiveSlideNummer = swiper.activeIndex;
+
+        // Zugriff auf die entsprechende Zahl im DOM
+        const aktuelleZahl = document.querySelector(
+          `#swiperWraper1 .swiper-slide:nth-child(${aktiveSlideNummer + 1})`
+        ).innerText;
+
+        // Speichern der Zahl in einer Variable
+        let gespeicherteZahl = aktuelleZahl;
+
+        // Hier kannst du die gespeicherteZahl für weitere Verwendungszwecke verwenden
+        console.log(gespeicherteZahl);
+      }
+
+      // Beispielaufruf nach dem Swipe
+      swiper.on("slideChange", function () {
+        speichereAktuelleZahl();
+      });
+
+      let hoursContainer = document.getElementById("swiperWraper1");
+      let secondsContainer = document.getElementById("swiperWraper3");
+
+      function startTimer() {
+        if (!timerStarted) {
+          let startTime = new Date().getTime();
+          let minutesInp = minutesContainer.innerHTML;
+          let countdownMinutes = 1000 * 60 * minutesInp;
+          let endTime = startTime + countdownMinutes;
+
+          timerInterval = setInterval(function () {
+            let timeLeft = endTime - new Date().getTime();
+
+            if (timeLeft > 0) {
+              let minutes = timeLeft / (1000 * 60);
+              minutes = Math.floor(minutes);
+              minutes = ("0" + minutes).slice(-2);
+              let seconds = (timeLeft / 1000) % 60;
+              seconds = Math.round(seconds);
+              seconds = ("0" + seconds).slice(-2);
+              minutesContainer.innerHTML = minutes;
+            } else {
+              alarm.play();
+              minutesContainer.innerHTML = "12";
+            }
+          }, 1000);
+          timerStarted = true;
+        }
+      }
+      function stopTimer() {
+        clearInterval(timerInterval);
+        timerStarted = false;
+        minutesContainer.innerHTML = "00";
+      }
+    </script>
+  </body>
+</html>
+
+<!---->
+<!--https://swiperjs.com/types/interfaces/types_swiper_options.SwiperOptions-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
