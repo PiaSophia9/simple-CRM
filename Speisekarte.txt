@@ -1,4 +1,0 @@
-Speisekarte
-1	Pizza	12,50€
-2	Pasta	12,50€
-3	Lasagne	14,50€
