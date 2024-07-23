@@ -1,10 +1,14 @@
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>Auto-resizing sidenav</p>
+  <mat-drawer #drawer class="sidenav" [opened]="true" mode="side">
+    <span>Platz für Logo</span>
+    <mat-list>
+      <mat-list-item> <mat-icon>dashboard</mat-icon>Dashboard</mat-list-item>
+      <mat-list-item> <mat-icon>person</mat-icon>User</mat-list-item>
+    </mat-list>
   </mat-drawer>
 
   <div class="example-sidenav-content">
-    <mat-toolbar>
+    <mat-toolbar color="primary">
       <mat-toolbar-row>
         <mat-icon (click)="drawer.toggle()">menu</mat-icon>
         <span>Simple CRM</span>

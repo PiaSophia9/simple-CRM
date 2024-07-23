@@ -1,7 +1,27 @@
 mat-drawer-container {
   height: 100%;
+  mat-drawer {
+    font-size: var(--mat-toolbar-title-text-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      box-sizing: border-box;
+      display: flex;
+      height: 64px;
+      padding: 16px;
+      align-items: center;
+      border-bottom: 1px lightgray solid;
+    }
+    mat-list-item {
+    }
+  }
 }
 
-.mat-toolbar {
-  background: lightblue;
+.sidenav {
+  width: 300px;
+}
+
+mat-icon {
+  cursor: pointer;
 }
