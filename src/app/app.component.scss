@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 mat-drawer-container {
   height: 100%;
   mat-drawer {
@@ -6,14 +10,22 @@ mat-drawer-container {
     align-items: center;
     justify-content: center;
     span {
-      box-sizing: border-box;
       display: flex;
-      height: 64px;
-      padding: 16px;
       align-items: center;
-      border-bottom: 1px lightgray solid;
     }
-    mat-list-item {
+    .logo {
+      height: 64px;
+      border-bottom: 1px lightgray solid;
+      padding: 16px;
+    }
+    .sidenav_button {
+      height: 64px;
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      box-sizing: border-box;
+      gap: 16px;
+      cursor: pointer;
     }
   }
 }
@@ -24,4 +36,8 @@ mat-drawer-container {
 
 mat-icon {
   cursor: pointer;
+}
+
+mat-toolbar-row {
+  gap: 16px;
 }
