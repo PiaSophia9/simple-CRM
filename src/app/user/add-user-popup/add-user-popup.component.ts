@@ -17,6 +17,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { UserComponent } from '../user.component';
+
 @Component({
   selector: 'app-add-user-popup',
   standalone: true,
@@ -35,26 +36,22 @@ import { UserComponent } from '../user.component';
     { provide: MAT_DATE_FORMATS, useValue: MAT_NATIVE_DATE_FORMATS },
   ],
   templateUrl: './add-user-popup.component.html',
-  styleUrl: './add-user-popup.component.scss',
+  styleUrls: ['./add-user-popup.component.scss'], // Korrigierte Eigenschaftsname
 })
 export class AddUserPopupComponent {
-  user: User = {};
+  birthdate: Date = new Date();
 
-  firstName: string = '';
-  lastName: string = '';
-  street: string = '';
-  zip: number = 0;
-  city: string = '';
-  picker: number = 0;
+  user: User = {
+    firstName: '',
+    lastName: '',
+    street: '',
+    zip: '',
+    city: '',
+    birthdate: 0,
+  };
 
   saveUser() {
-    console.log(
-      this.firstName,
-      this.lastName,
-      this.picker,
-      this.street,
-      this.zip,
-      this.city
-    );
+    this.user.birthdate = this.birthdate.getTime();
+    console.log(this.user);
   }
 }

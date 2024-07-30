@@ -2,7 +2,7 @@ export interface User {
   firstName: string;
   lastName: string;
   street: string;
-  zip: number;
+  zip: number | string;
   city: string;
-  picker: number;
+  birthdate: number; // Geändert von picker zu birthdate und vom Typ Date
 }
